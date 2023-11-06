@@ -2,11 +2,14 @@ package entites2;
 
 import entites.AdressePostale;
 
-public class Personne {
+/**
+ * Cette classe représente le concept de Personne dans l'application.
+ */
+public class Personne extends Object {
 
-    public String nom; // <== ça c'est this.nom
-    public String prenom;
-    public AdressePostale adresse;
+    private String nom; // <== ça c'est this.nom
+    private String prenom;
+    private AdressePostale adresse; // Ici on a une association
 
     public Personne(String nom, String prenom) {
         this.nom = nom;
@@ -19,13 +22,12 @@ public class Personne {
         this.adresse = adresse;
     }
 
+    // Méthode redéfinie de la classe Object
     @Override
     public String toString() {
-        return "Personne{" +
-                "nom='" + nom + '\'' +
+        return "nom='" + nom + '\'' +
                 ", prenom='" + prenom + '\'' +
-                ", adresse=" + adresse +
-                '}';
+                ", adresse=" + adresse;
     }
 
     public String getNom() {

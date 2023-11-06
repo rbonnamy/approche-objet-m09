@@ -6,6 +6,8 @@ public class TestAdressePostale {
         AdressePostale adr1 = new AdressePostale(5, "place du Marché", 44000, "Nantes");
         AdressePostale adr2 = new AdressePostale(15, "avenue Java", 34500, "Pérols");
 
+        adr1.setNumeroRue(12);
+
         int dept1 = adr1.departement();
         int dept2 = adr2.departement();
 

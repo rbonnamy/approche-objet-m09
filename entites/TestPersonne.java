@@ -1,5 +1,6 @@
 package entites;
 
+import entites2.Client;
 import entites2.Personne;
 
 public class TestPersonne {
@@ -8,9 +9,11 @@ public class TestPersonne {
         AdressePostale adr2 = new AdressePostale(51, "place du Marché", 44100, "Nantes");
         Personne p1 = new Personne("LEE", "Arg", adr);
 
-        Personne p2 = new Personne("Kiop", "Paul");
-        p2.adresse = adr;
 
-        System.out.println(p2);
+        Personne p2 = new Personne("Kiop", "Paul");
+
+        Client c1 = new Client("HHH", "ljlk", 127);
+        System.out.println(c1);
+
     }
 }
